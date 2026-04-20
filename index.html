@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Force Energy – Customer Portal</title>
+    <!-- Use Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Link Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+            <span>North Force Energy</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Billing</a>
+            <a href="#" class="active">EV Tariffs</a>
+        </div>
+        <div class="nav-profile">
+            <div class="avatar">LW</div>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-text">
+                <h1>Welcome back, Luke</h1>
+                <p>Here is your home energy breakdown for this month.</p>
+            </div>
+            <button class="upgrade-btn">View Offers</button>
+        </header>
+
+        <section class="metrics-grid">
+            <div class="metric-card glass">
+                <div class="metric-icon green">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <h3>Current Usage</h3>
+                <p class="metric-value">800 <span>kWh</span></p>
+                <div class="metric-trend up">+23% vs last month</div>
+            </div>
+
+            <div class="metric-card glass">
+                <div class="metric-icon blue">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M9 9h6v6H9z"/></svg>
+                </div>
+                <h3>Active Tariff</h3>
+                <p class="metric-value tariff-name">Everyday Electricity</p>
+                <div class="metric-trend neutral">Standard Variable Rate</div>
+            </div>
+
+            <div class="metric-card glass gradient-card">
+                <h3>EV Charging Insights</h3>
+                <p>We've detected a significant increase in your overnight energy consumption, strongly indicating EV charging.</p>
+                <p class="suggestionText">Talk to our Agentforce Advisor below to discover cheaper EV plans!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Paste your Salesforce Embedded Service code snippet here! -->
+    <!-- It will automatically locate itself floating in the bottom right corner over our canvas. -->
+
+</body>
+</html>
