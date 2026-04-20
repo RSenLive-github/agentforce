@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>North Force Energy – Customer Portal</title>
-    <!-- Use Google Fonts -->
+    <title>North Force Energy | Smarter energy for modern homes and businesses</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Link Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -22,71 +22,237 @@
             </svg>
             <span>North Force Energy</span>
         </div>
+
         <div class="nav-links">
-            <a href="#">Dashboard</a>
-            <a href="#">Billing</a>
-            <a href="#" class="active">EV Tariffs</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#plans">Plans</a>
+            <a href="#business">Business</a>
+            <a href="#why-us">Why North Force</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="nav-profile">
-            <div class="avatar">LW</div>
+
+        <div class="nav-actions">
+            <a href="#" class="text-link">Help Centre</a>
+            <a href="#" class="outline-btn">Get a quote</a>
         </div>
     </nav>
 
-    <main class="dashboard-container">
-        <header class="dashboard-header">
-            <div class="header-text">
-                <h1>Welcome back, Luke</h1>
-                <p>Here is your home energy breakdown for this month.</p>
-            </div>
-            <button class="upgrade-btn">View Offers</button>
-        </header>
+    <main class="site-container">
+        <section class="hero-section" id="home">
+            <div class="hero-copy">
+                <div class="eyebrow">Trusted energy for homes and businesses</div>
+                <h1>Powering everyday life with simpler, smarter energy</h1>
+                <p class="hero-text">
+                    North Force Energy helps customers manage costs, explore EV-friendly tariffs,
+                    and move towards a cleaner future with confidence.
+                </p>
 
-        <section class="metrics-grid">
-            <div class="metric-card glass">
-                <div class="metric-icon green">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                <div class="hero-actions">
+                    <a href="#plans" class="primary-btn">Explore energy plans</a>
+                    <a href="#business" class="secondary-btn">Business energy solutions</a>
                 </div>
-                <h3>Current Usage</h3>
-                <p class="metric-value">800 <span>kWh</span></p>
-                <div class="metric-trend up">+23% vs last month</div>
-            </div>
 
-            <div class="metric-card glass">
-                <div class="metric-icon blue">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M9 9h6v6H9z"/></svg>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <strong>Flexible plans</strong>
+                        <span>Residential and business tariffs</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>EV ready</strong>
+                        <span>Options for overnight charging</span>
+                    </div>
+                    <div class="trust-item">
+                        <strong>Support when needed</strong>
+                        <span>Digital service with human help</span>
+                    </div>
                 </div>
-                <h3>Active Tariff</h3>
-                <p class="metric-value tariff-name">Everyday Electricity</p>
-                <div class="metric-trend neutral">Standard Variable Rate</div>
             </div>
 
-            <div class="metric-card glass gradient-card">
-                <h3>EV Charging Insights</h3>
-                <p>We've detected a significant increase in your overnight energy consumption, strongly indicating EV charging.</p>
-                <p class="suggestionText">Talk to our Agentforce Advisor below to discover cheaper EV plans!</p>
+            <div class="hero-panel glass">
+                <div class="panel-badge">Featured</div>
+                <h2>EV tariffs built for modern households</h2>
+                <p>
+                    Discover tariffs designed for homes with electric vehicles, smarter overnight usage,
+                    and clearer energy insights.
+                </p>
+
+                <div class="feature-list">
+                    <div class="feature-row">
+                        <span class="feature-dot"></span>
+                        <span>Options for off-peak charging</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-dot"></span>
+                        <span>Simple plan comparison support</span>
+                    </div>
+                    <div class="feature-row">
+                        <span class="feature-dot"></span>
+                        <span>Talk to our energy advisor in chat</span>
+                    </div>
+                </div>
+
+                <a href="#plans" class="panel-link">View EV and home energy plans</a>
+            </div>
+        </section>
+
+        <section class="brand-strip glass">
+            <div class="brand-stat">
+                <strong>Residential energy</strong>
+                <span>Simple plans for modern homes</span>
+            </div>
+            <div class="brand-stat">
+                <strong>Business energy</strong>
+                <span>Support for growing organisations</span>
+            </div>
+            <div class="brand-stat">
+                <strong>Cleaner future</strong>
+                <span>Helping customers adopt lower-carbon choices</span>
+            </div>
+        </section>
+
+        <section class="cards-section" id="plans">
+            <div class="section-heading">
+                <div class="eyebrow">Our energy plans</div>
+                <h2>Solutions designed around how people really use energy</h2>
+                <p>
+                    Whether you are looking for everyday value, EV-friendly tariffs, or business support,
+                    North Force Energy makes it easier to find the right fit.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="info-card glass">
+                    <div class="card-icon green">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3>Home energy plans</h3>
+                    <p>
+                        Straightforward energy options for households that want clarity, flexibility,
+                        and dependable service.
+                    </p>
+                    <a href="#">See home plans</a>
+                </article>
+
+                <article class="info-card glass">
+                    <div class="card-icon blue">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 7h10v10H7z"/>
+                            <path d="M9 1v4"/>
+                            <path d="M15 1v4"/>
+                            <path d="M9 19v4"/>
+                            <path d="M15 19v4"/>
+                        </svg>
+                    </div>
+                    <h3>EV tariffs</h3>
+                    <p>
+                        Tariffs designed for customers with changing usage patterns, including overnight charging.
+                    </p>
+                    <a href="#">Explore EV options</a>
+                </article>
+
+                <article class="info-card glass gradient-card">
+                    <h3>Energy advice and support</h3>
+                    <p>
+                        Need help choosing the right plan? Our digital advisor can guide customers to suitable
+                        options and help arrange a follow-up where needed.
+                    </p>
+                    <p class="suggestionText">
+                        Use the chat assistant to start the conversation.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="split-section" id="business">
+            <div class="split-copy">
+                <div class="eyebrow">For business customers</div>
+                <h2>Commercial energy support built for growing organisations</h2>
+                <p>
+                    From small businesses to larger commercial sites, North Force Energy supports smarter
+                    energy choices, clearer service, and practical tariff conversations.
+                </p>
+                <ul class="benefits-list">
+                    <li>Flexible commercial energy options</li>
+                    <li>Support for multi-site and changing usage profiles</li>
+                    <li>Digital journeys backed by advisor support</li>
+                </ul>
+                <a href="#" class="primary-btn">Talk to our commercial team</a>
+            </div>
+
+            <div class="split-card glass">
+                <div class="mini-card">
+                    <span class="mini-label">Why businesses choose us</span>
+                    <strong>Clearer conversations. Better visibility. Smarter options.</strong>
+                </div>
+                <div class="mini-card">
+                    <span class="mini-label">Need guidance?</span>
+                    <strong>Ask our advisor about business energy plans and EV-ready options.</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us-section" id="why-us">
+            <div class="section-heading centred">
+                <div class="eyebrow">Why North Force Energy</div>
+                <h2>Built around simplicity, service, and smarter energy choices</h2>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card glass">
+                    <h3>Simple journeys</h3>
+                    <p>We make it easier for customers to understand plans, compare options, and get support.</p>
+                </div>
+                <div class="why-card glass">
+                    <h3>Digital first</h3>
+                    <p>Customers can start online, use chat for guidance, and move smoothly into assisted support.</p>
+                </div>
+                <div class="why-card glass">
+                    <h3>Future focused</h3>
+                    <p>From EV adoption to cleaner energy choices, we help customers adapt with confidence.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section glass" id="contact">
+            <div>
+                <div class="eyebrow">Ready to get started?</div>
+                <h2>Find the right energy plan for your home or business</h2>
+                <p>
+                    Explore tariffs, speak to our advisor, or request a follow-up from the North Force Energy team.
+                </p>
+            </div>
+            <div class="cta-actions">
+                <a href="#" class="primary-btn">Get a quote</a>
+                <a href="#" class="secondary-btn">Speak to an advisor</a>
             </div>
         </section>
     </main>
 
-    <script type='text/javascript'>
-    	function initEmbeddedMessaging() {
-    		try {
-    			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-    
-    			embeddedservice_bootstrap.init(
-    				'00DgL000005pPBB',
-    				'Energy_Bill_Advisor_Web_Deployment',
-    				'https://thenorthforce-dev-ed.develop.my.site.com/ESWEnergyBillAdvisorWe1776717665850',
-    				{
-    					scrt2URL: 'https://thenorthforce-dev-ed.develop.my.salesforce-scrt.com'
-    				}
-    			);
-    		} catch (err) {
-    			console.error('Error loading Embedded Messaging: ', err);
-    		}
-    	};
-    </script>
-    <script type='text/javascript' src='https://thenorthforce-dev-ed.develop.my.site.com/ESWEnergyBillAdvisorWe1776717665850/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    <script type="text/javascript">
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US';
 
+                embeddedservice_bootstrap.init(
+                    '00DgL000005pPBB',
+                    'Energy_Bill_Advisor_Web_Deployment',
+                    'https://thenorthforce-dev-ed.develop.my.site.com/ESWEnergyBillAdvisorWe1776717665850',
+                    {
+                        scrt2URL: 'https://thenorthforce-dev-ed.develop.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+
+    <script
+        type="text/javascript"
+        src="https://thenorthforce-dev-ed.develop.my.site.com/ESWEnergyBillAdvisorWe1776717665850/assets/js/bootstrap.min.js"
+        onload="initEmbeddedMessaging()">
+    </script>
 </body>
 </html>
