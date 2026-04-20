@@ -68,8 +68,25 @@
         </section>
     </main>
 
-    <!-- Paste your Salesforce Embedded Service code snippet here! -->
-    <!-- It will automatically locate itself floating in the bottom right corner over our canvas. -->
+    <script type='text/javascript'>
+    	function initEmbeddedMessaging() {
+    		try {
+    			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    
+    			embeddedservice_bootstrap.init(
+    				'00DgL000005pPBB',
+    				'Energy_Bill_Advisor_Web_Deployment',
+    				'https://thenorthforce-dev-ed.develop.my.site.com/ESWEnergyBillAdvisorWe1776717665850',
+    				{
+    					scrt2URL: 'https://thenorthforce-dev-ed.develop.my.salesforce-scrt.com'
+    				}
+    			);
+    		} catch (err) {
+    			console.error('Error loading Embedded Messaging: ', err);
+    		}
+    	};
+    </script>
+    <script type='text/javascript' src='https://thenorthforce-dev-ed.develop.my.site.com/ESWEnergyBillAdvisorWe1776717665850/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
